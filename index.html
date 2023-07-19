@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+
+    <title>Projekt von Vladyslav Hrynevskyi.</title>
+  </head>
+
+  <body>
+    <div class="container global-block">
+      <div class="container left-part">
+        <div class="title-cont">
+          <div class="container">
+            <h1 class="titel-name">Vladyslav Hrynevskyi</h1>
+            <h2 class="titel-pos">Praktikant Fullstack Entwickler</h2>
+          </div>
+        </div>
+
+        <div class="page">
+          <!-- VIDEO -->
+          <!-- <div class="video">
+            <div class="video__overlay js-video-btn">
+              <svg class="video-icon" width="35" height="35">
+                <use href="./img/icons.svg#icon-play"></use>
+              </svg>
+            </div>
+            <video
+              class="video-mobile js-video"
+              src="./img/video0.mp4"
+              poster="./img/photo0.png"
+              preload="auto"
+            ></video>
+
+            <video
+              class="video-mobile js-video"
+              src="./img/4apl.mp4"
+              poster="./img/photo.jpg"
+              preload="auto"
+              muted
+            ></video>
+          </div> -->
+
+          <img
+            class="img-vlad"
+            src="./img/photo0.png"
+            alt="Photo von Vladyslav"
+            width="427"
+          />
+        </div>
+
+        <!-- СКРЫТЫЙ БЛОК №1 -->
+
+        <div class="hidden-block-info">
+          <h2 class="but-pers-inf info-position">Personal Information</h2>
+
+          <p class="pers-info-pos">
+            <span class="left-description-font-wage-corr">
+              12 April 1989 <br />
+              <a class="underline" href="tel:+41795104246">+41 79 5104246 </a>
+              <br />
+              <a class="underline" href="tel:+380508696255"
+                >+380508696255 (messengers)</a
+              >
+              <br />
+              <a class="underline" href="greenevsky@gmail.com"
+                >greenevsky@gmail.com</a
+              ><br />
+              <a class="underline" href=" https://www.linkedin.com/in/vvh/"
+                >LinkedIn</a
+              >
+              <br />
+              St. Gallerstrasse 13 9300 Wittenbach<br />
+              Kinder 2 (2016), (2022) <br />
+              Bewilligung S <br />
+              Führerschein B<br />
+              Deutsch B2 <br />
+              Englisch B1 <br />
+              Russisch, Ukrainisch - native.<br />
+            </span>
+          </p>
+        </div>
+        <!-- СКРЫТЫЙ БЛОК №2 -->
+
+        <div class="hidden-block-info">
+          <h2 class="but-pers-inf info-position">Kenntnisse und Interessen</h2>
+
+          <p class="pers-info-pos">
+            <span class="left-description-font-wage-corr">
+              CSS, HTML, Java Script, <br />
+              Microsoft Office, <br />Modellieren in 3DSmax, <br />Bücher lesen,
+              <br />Umweltprojekten.<br
+            /></span>
+          </p>
+        </div>
+      </div>
+
+      <div class="right-part">
+        <ul>
+          <li class="to-hide">
+            <button
+              class="but-pers-inf"
+              id="knopf-eins"
+              onclick="readMorePersInf()"
+            >
+              + Personal Information
+            </button>
+
+            <!-- <p id="mehr-eins" style="display: none"> -->
+            <p id="mehr-eins">
+              <span class="description-font-wage-corr">
+                <br />
+                12 April 1989 <br />
+                <a class="underline" href="tel:+41795104246">+41795104246 </a>
+                <br />
+                <a class="underline" href="tel:+380508696255"
+                  >+380508696255 (messengers)</a
+                >
+                <br />
+                <a class="underline" href="greenevsky@gmail.com"
+                  >greenevsky@gmail.com</a
+                ><br />
+                <a class="underline" href=" https://www.linkedin.com/in/vvh/"
+                  >LinkedIn</a
+                >
+                <br />
+                St. Gallerstrasse 13 9300 Wittenbach<br />
+                Kinder 2 (2016), (2022) <br />
+                Bewilligung S <br />
+                Führerschein B<br />
+                Deutsch B2 <br />
+                Englisch B1 <br />
+                Russisch, Ukrainisch - native.<br />
+              </span>
+            </p>
+          </li>
+
+          <li>
+            <button
+              class="but-pers-inf to-hide"
+              id="knopf-zwei"
+              onclick="readMoreBerufsErf()"
+            >
+              <span class="to-hide">+</span>Berufserfahrung
+            </button>
+
+            <h2 class="but-pers-inf info-position switcher">Berufserfahrung</h2>
+
+            <!-- <p id="mehr-zwei" style="display: none"> -->
+            <p id="mehr-zwei" class="desk-text-styl">
+              <br />
+              08.2021 – 02.2022
+              <br />Projektanwalt <br />Intergal-Bud, Kiew <br />
+              <span
+                class="description-font-wage-corr desk-description-font-wage-corr"
+                >Konstruktion. Immobilie. Architektur.
+              </span>
+              <br /><br />
+
+              07.2019 – 08.2021
+              <br />Anwalt in Kapitalinvestitionen <br />
+              ArcelorMittal, Krywyj Rih <br />
+              <span
+                class="description-font-wage-corr desk-description-font-wage-corr"
+              >
+                Bergbauindustrie. Bergbau und Verarbeitung von Eisen. Immobilie.
+                Architektur. Bau von Einrichtungen der
+                Metallurgieindustrie.</span
+              >
+              <br /><br />
+
+              11.2015 – 07.2019
+              <br />
+              Manager für Rechtsangelegenheiten
+              <br />Corum Group, Kiew <br />
+              <span
+                class="description-font-wage-corr desk-description-font-wage-corr"
+              >
+                Industrielle Ausrüstung. Werkzeugmaschinen und Komponenten.
+                Maschinen für den Bergbau. Immobilie. Die Architektur. Logistik. </span
+              ><br /><br />
+
+              12.2011 – 09.2014
+              <br />
+              Jurist im Wirtschaftsrecht
+              <br />Donspecprom, Donezk<br />
+              <span
+                class="description-font-wage-corr desk-description-font-wage-corr"
+                >Industrielle Ausrüstung. Werkzeugmaschinen und Komponenten.
+                Maschinen für den Bergbau. Immobilie. Die Architektur.
+                Logistik.</span
+              ><br /><br />
+
+              08.2007 – 07.2011
+              <br />
+              Richterassistent
+              <br />Bezirksgericht, Donezk <br /><br />
+            </p>
+          </li>
+
+          <li>
+            <button
+              class="but-pers-inf to-hide"
+              id="knopf-drei"
+              onclick="readMoreAusb()"
+            >
+              <span class="to-hide">+</span> Ausbildung
+            </button>
+
+            <h2 class="but-pers-inf info-position switcher">Ausbildung</h2>
+            <!-- <p id="mehr-drei" style="display: none"> -->
+
+            <p id="mehr-drei" class="desk-text-styl">
+              <br />
+              2023 - Universität St.Gallen (HSG), Executive School, Law &
+              Management
+              <br />
+              <span
+                class="description-font-wage-corr desk-description-font-wage-corr"
+                >Cyber Security für Führungskräft.
+              </span>
+              <br /><br />
+              2011 – 2012 Magister Jura, <br />
+              Nationale Wasyl Stus Universität, Donezk. <br />
+              <span
+                class="description-font-wage-corr desk-description-font-wage-corr"
+                >Die Bewertung einer ausländischen Hochschulqualifikationen hat
+                gemacht. Titel: Magister; Studienrichtung: Rechtswissenschaft.
+              </span>
+              <br /><br />
+              2007 – 2011 Bachelor, Jura<br />
+              Institute des Innenministeriums der Ukraine, Donezk.<br /><br />
+
+              Weiterbildung:
+              <span
+                class="description-font-wage-corr desk-description-font-wage-corr"
+              >
+                <br />2016 – Seminar Anti-Korruptionsgesetzgebung <br />
+                2019 Seminar zum englischen Vertragsrecht <br />
+                2022 Deutsch Kurs A2 <br />
+                2023 Deutsch Kurs B2 <br />
+                2023 Swisscom NGG Web Development course (JS, CSS, HTML) Give &
+                Grow
+                <br />
+              </span>
+            </p>
+          </li>
+          <li class="to-hide">
+            <button
+              class="but-pers-inf"
+              id="knopf-vier"
+              onclick="readMoreKennInt()"
+            >
+              + Kenntnisse und Interessen
+            </button>
+            <!-- <p id="mehr-vier" style="display: none"> -->
+            <p id="mehr-vier">
+              <span class="description-font-wage-corr">
+                <br />
+                CSS, HTML, Java Script, <br />
+                Microsoft Office, <br />Modellieren in 3DSmax, <br />Bücher
+                lesen, <br />Umweltprojekten.<br
+              /></span>
+            </p>
+          </li>
+          <li>
+            <button
+              class="but-pers-inf to-hide"
+              id="knopf-fünf"
+              onclick="readMoreFortschritten()"
+            >
+              <span class="to-hide">+</span> Fortschritten/Projekten
+            </button>
+
+            <h2 class="but-pers-inf info-position switcher">
+              Fortschritten/Projekten
+            </h2>
+
+            <!-- <p id="mehr-fünf" style="display: none"> -->
+            <p id="mehr-fünf" class="desk-text-styl">
+              <br />
+              <span
+                class="description-font-wage-corr underline desk-description-font-wage-corr"
+              >
+                <a href="https://xxx3105.github.io/nggswisscom/"
+                  >Aufgaben von SwissCOM №1</a
+                ><br />
+                <a href="https://xxx3105.github.io/HW-NGG-31B/"
+                  >Aufgaben von SwissCOM №2</a
+                ><br />
+                <a href="https://cv-vvh.netlify.app/"
+                  >Lebenslauf - Trainingsaufgabe</a
+                ><br />
+                <a href="https://xxx3105.github.io/Web/"
+                  >WebStudio - Trainingsaufgabe</a
+                ><br />
+                <a href="https://artemon-x58.github.io/team-project/ ">
+                  Chokoladen - Trainingsaufgabe</a
+                ></span
+              ><br />
+            </p>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
